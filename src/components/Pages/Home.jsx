@@ -16,12 +16,14 @@ const Home = () => {
     } else {
       const newCart = [...cart, tShirt];
       setCart(newCart);
+      toast("Good Job! Product is added to the cart");
     }
   };
 
   const handleRemoveFromCart = (id) => {
     const remainingCart = cart.filter((ts) => ts._id !== id);
     setCart(remainingCart);
+    toast("Done! Product is removed from cart");
   };
 
   return (
