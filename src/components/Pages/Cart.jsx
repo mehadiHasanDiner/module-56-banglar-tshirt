@@ -61,7 +61,7 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
       {/*3. Logical && */}
       {cart.length === 2 && <p>Double bonanza</p>}
       {/*4. Logical || */}
-      {cart.length === 3 || <p>Tinta product kino</p>}
+      {cart.length >= 3 || <p>Tinta product kino</p>}
     </div>
   );
 };
